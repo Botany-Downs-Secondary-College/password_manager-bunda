@@ -2,7 +2,6 @@
 #store and display password for others
 #E.Xuan, February 22
 
-import os
 
 name = ""
 age = ""
