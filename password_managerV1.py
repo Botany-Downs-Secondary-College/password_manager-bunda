@@ -30,10 +30,14 @@ age = int(input("How old are you?: "))
 while True:
     option = menu(name, age)
 
-    if option == "1":      
+    if option == "1":
+        new_password = input("please enter a password: ")
+        password_list.append(new_password)        
         print("Successful")
     elif option == "2":
         print("Here are your passwords")
+        for password in password_list:
+            print(password)
         print("Successful")
     elif option == "3":
         print("Goodbye")
@@ -41,8 +45,3 @@ while True:
     else:
         print("That is not a valid number please enter a valid value")
 print("Thank you for using the password manager")
-
-    
-
-
-    
